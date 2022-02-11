@@ -242,75 +242,12 @@ env_name：要创建的环境的名字">
         </li>
         
         
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
     </ul>
 </div>
 
 
         </div>
 
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
         
     </nav>
 
@@ -492,22 +429,22 @@ env_name：要创建的环境的名字">
 
 
 
-<h2 id="环境管理"><a href="#环境管理" class="headerlink" title="环境管理"></a>环境管理</h2><h3 id="创建虚拟环境："><a href="#创建虚拟环境：" class="headerlink" title="创建虚拟环境："></a>创建虚拟环境：</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda create -n [env_name] python=[X.X]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="环境管理"><a href="#环境管理" class="headerlink" title="环境管理"></a>环境管理</h2><h3 id="创建虚拟环境："><a href="#创建虚拟环境：" class="headerlink" title="创建虚拟环境："></a>创建虚拟环境：</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda create -n <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span> <span class="token assign-left variable">python</span><span class="token operator">=</span><span class="token punctuation">[</span>X.X<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <ul>
 <li>env_name：要创建的环境的名字</li>
 <li>X.X：要创建的环境的python的版本，如3.7</li>
 </ul>
-<h3 id="激活虚拟环境"><a href="#激活虚拟环境" class="headerlink" title="激活虚拟环境"></a>激活虚拟环境</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda activate [env_name]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="激活虚拟环境"><a href="#激活虚拟环境" class="headerlink" title="激活虚拟环境"></a>激活虚拟环境</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda activate <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="停用当前环境"><a href="#停用当前环境" class="headerlink" title="停用当前环境"></a>停用当前环境</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda deactivate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="查看当前环境的python版本"><a href="#查看当前环境的python版本" class="headerlink" title="查看当前环境的python版本"></a>查看当前环境的python版本</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python --version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="查看所有存在的虚拟环境"><a href="#查看所有存在的虚拟环境" class="headerlink" title="查看所有存在的虚拟环境"></a>查看所有存在的虚拟环境</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda info -e
-conda env list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+conda <span class="token function">env</span> list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="删除虚拟环境："><a href="#删除虚拟环境：" class="headerlink" title="删除虚拟环境："></a>删除虚拟环境：</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda remove -n [env_name] --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="删除虚拟环境："><a href="#删除虚拟环境：" class="headerlink" title="删除虚拟环境："></a>删除虚拟环境：</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda remove -n <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span> --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="重命名环境"><a href="#重命名环境" class="headerlink" title="重命名环境"></a>重命名环境</h3><ul>
 <li>conda没有直接重命名环境的功能，但可以通过以下两个步骤完成：<ol>
@@ -516,12 +453,12 @@ conda env list<span aria-hidden="true" class="line-numbers-rows"><span></span><s
 </ol>
 </li>
 </ul>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda create --name [newname] --clone [oldname]
-conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda create --name <span class="token punctuation">[</span>newname<span class="token punctuation">]</span> --clone <span class="token punctuation">[</span>oldname<span class="token punctuation">]</span>
+conda remove --name <span class="token punctuation">[</span>oldname<span class="token punctuation">]</span> --all<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
 
-<h2 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h2><h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda install [pac_name]=[包的版本号]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h2><h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda <span class="token function">install</span> <span class="token punctuation">[</span>pac_name<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">[</span>包的版本号<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="查看已经安装的包"><a href="#查看已经安装的包" class="headerlink" title="查看已经安装的包"></a>查看已经安装的包</h3><ul>
 <li>查看当前环境：</li>
@@ -531,11 +468,11 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
 <ul>
 <li>查看指定环境：</li>
 </ul>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda list -n [env_name]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda list -n <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="删除包"><a href="#删除包" class="headerlink" title="删除包"></a>删除包</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda uninstall [pac_name]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="删除包"><a href="#删除包" class="headerlink" title="删除包"></a>删除包</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda uninstall <span class="token punctuation">[</span>pac_name<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="更新指定包"><a href="#更新指定包" class="headerlink" title="更新指定包"></a>更新指定包</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda update [pac_name]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="更新指定包"><a href="#更新指定包" class="headerlink" title="更新指定包"></a>更新指定包</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda update <span class="token punctuation">[</span>pac_name<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="清理包"><a href="#清理包" class="headerlink" title="清理包"></a>清理包</h3><ul>
 <li>通过以下指令来删除一些没用的包，这个命令会检查哪些包没有在包缓存中被硬依赖到其他地方，并删除它们</li>
@@ -557,7 +494,7 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
 <h3 id="安装requirements-txt文件内的包"><a href="#安装requirements-txt文件内的包" class="headerlink" title="安装requirements.txt文件内的包"></a>安装requirements.txt文件内的包</h3><ul>
 <li>首先通过cd指令进入<strong>requirements.txt</strong>文件所在路径，然后执行如下指令即可</li>
 </ul>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pip <span class="token function">install</span> -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="包的数据源管理"><a href="#包的数据源管理" class="headerlink" title="包的数据源管理"></a>包的数据源管理</h3><ul>
 <li>显示目前conda的数据源有哪些：</li>
@@ -656,132 +593,6 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
 
                 </div>
             </div>
-            
-                <style>
-    #reward {
-        margin: 40px 0;
-        text-align: center;
-    }
-
-    #reward .reward-link {
-        font-size: 1.4rem;
-        line-height: 38px;
-    }
-
-    #reward .btn-floating:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    #rewardModal {
-        width: 320px;
-        height: 350px;
-    }
-
-    #rewardModal .reward-title {
-        margin: 15px auto;
-        padding-bottom: 5px;
-    }
-
-    #rewardModal .modal-content {
-        padding: 10px;
-    }
-
-    #rewardModal .close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.3rem;
-        line-height: 20px;
-        cursor: pointer;
-    }
-
-    #rewardModal .close:hover {
-        color: #ef5350;
-        transform: scale(1.3);
-        -moz-transform:scale(1.3);
-        -webkit-transform:scale(1.3);
-        -o-transform:scale(1.3);
-    }
-
-    #rewardModal .reward-tabs {
-        margin: 0 auto;
-        width: 210px;
-    }
-
-    .reward-tabs .tabs {
-        height: 38px;
-        margin: 10px auto;
-        padding-left: 0;
-    }
-
-    .reward-content ul {
-        padding-left: 0 !important;
-    }
-
-    .reward-tabs .tabs .tab {
-        height: 38px;
-        line-height: 38px;
-    }
-
-    .reward-tabs .tab a {
-        color: #fff;
-        background-color: #ccc;
-    }
-
-    .reward-tabs .tab a:hover {
-        background-color: #ccc;
-        color: #fff;
-    }
-
-    .reward-tabs .wechat-tab .active {
-        color: #fff !important;
-        background-color: #22AB38 !important;
-    }
-
-    .reward-tabs .alipay-tab .active {
-        color: #fff !important;
-        background-color: #019FE8 !important;
-    }
-
-    .reward-tabs .reward-img {
-        width: 210px;
-        height: 210px;
-    }
-</style>
-
-<div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
             
         </div>
     </div>
@@ -888,6 +699,43 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: LGN<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者LGN所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
@@ -932,7 +780,7 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
+            collapseDepth: Number('1'),
             headingSelector: 'h2, h3, h4'
         });
 
@@ -1046,12 +894,12 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="387314457"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
                    loop='all'
-                   order='random'
+                   order='list'
                    preload='auto'
                    volume='0.7'
                    list-folded='true'
@@ -1101,7 +949,7 @@ conda remove --name [oldname] --all<span aria-hidden="true" class="line-numbers-
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/LGNWJQ" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
