@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>[UE]修改项目缓存路径</title>
+      <link href="/2022/02/13/UE-%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE%E7%BC%93%E5%AD%98%E8%B7%AF%E5%BE%84/"/>
+      <url>/2022/02/13/UE-%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE%E7%BC%93%E5%AD%98%E8%B7%AF%E5%BE%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="UE-修改项目缓存路径"><a href="#UE-修改项目缓存路径" class="headerlink" title="[UE]修改项目缓存路径"></a>[UE]修改项目缓存路径</h1><ol><li><p>进入UE安装路径：<code>UE_4.26\Engine\Config</code></p><p><img src="https://raw.githubusercontent.com/LGNWJQ/picgo/main/img/202202132129390.png" alt="image-20220213212929900"></p></li><li><p>用VScode打开<code>BaseEngine.ini</code>文件，查找<code>%ENGINEVERSIONAGNOSTICUSERDIR%DerivedDataCache</code>，将其替换为<code>%GAMEDIR%DerivedDataCache</code>，保存退出即可</p></li></ol><p>​    <img src="https://raw.githubusercontent.com/LGNWJQ/picgo/main/img/202202132131031.png" alt="image-20220213213116677"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> UE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test math</title>
       <link href="/2022/02/12/test-math/"/>
       <url>/2022/02/12/test-math/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>$E = mc^2$</p>]]></content>
       
       
       
